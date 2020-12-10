@@ -167,13 +167,17 @@ h4 {
   width: 100%;
   height: 1080px;
 }
-
+.projectType{
+  display:flex;
+  flex-direction: column;
+}
 
 .projectTiles {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 
 .container {
   position: relative;
