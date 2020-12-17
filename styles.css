@@ -254,15 +254,41 @@ vertical-align: -0.125em;
     flex-direction: column;
     align-items: center;
   }
+  #container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
   #name {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .projectTiles{
+  #aboutSection{
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  #projectSection{
       display:flex;
       flex-direction: column; 
       align-items:center;
+      margin-top: 600px;
+     
+  }
+  .projectTiles{
+    display:flex;
+    flex-direction: column;
+  }
+  #resumeSection{
+    margin-top:600px;
+  }
+  #download{
+    width: 20vw;
+  }
+  #contactSection{
+    display: flex; 
+    margin-top: 100px;
   }
 
 }
