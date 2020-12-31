@@ -288,7 +288,7 @@ vertical-align: -0.125em;
   }
   #contactSection{
     display: flex; 
-    margin-top: 100px;
+    justify-content: center;
   }
 
 }
