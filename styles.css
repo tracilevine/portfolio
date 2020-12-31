@@ -142,21 +142,22 @@ h1 {
 h4 {
   font-size: 1.5rem;
 }
-
-#download {
-  background: #f2a900;
-  text-decoration: none;
-  color: whitesmoke;
-  border-radius: 5%;
-  width: 10vw;
-  height: 10vh;
-  font-size: 1rem;
-  border: none;
+#resumeIcon{
+  height: 30vh;
 }
 #resumeSection{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+#resumeLink{
+  display: flex; 
+  align-items: center;
+  flex-direction:column;
+  color: whitesmoke;
+}
+a{
+  text-decoration: none;
 }
 #projectSection {
   color: white;
@@ -240,12 +241,13 @@ h4 {
 }
 #instaIcon {
    content: url('https://api.iconify.design/ant-design:instagram-outlined.svg?color=whitesmoke&height=50');
-vertical-align: -0.125em;
+    vertical-align: -0.125em;
 }
 
-.contactSection{
+#contact{
     display:flex; 
     justify-content: center;
+    margin-top: 10%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -286,9 +288,6 @@ vertical-align: -0.125em;
   #download{
     width: 20vw;
   }
-  #contactSection{
-    display: flex; 
-    justify-content: center;
-  }
+ 
 
 }
