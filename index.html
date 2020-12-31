@@ -6,13 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Traci Levine</title>
   </head>
-  <body>
-    <nav id="navbar">
-      <a href="#introSection">Intro</a>
-      <a href="#aboutSection">About Me</a>
-      <a href="#projectSection">My Projects</a>
-      <a href="#contactSection">Contact Me</a>
-  </nav>
+  
   <div id="container">
     <div id="introSection" >
       <img src="/utils/Logo.png" alt="logo" id="logo"/>
@@ -93,30 +87,14 @@
       <a href="/utils/TraciLevine.pdf" target="_blank" id="download">Download Resume</a>
       </button>
     </div>
-    <div id="contactSection">
+  
+  </div>
+
+    <footer id="contactSection">   
       <a href="mailto:televine@gmail.com" id="emailIcon"></a>
       <a href="https://www.linkedin.com/in/traci-levine/" id="linkedinIcon"></a>
       <a href="https://github.com/tracilevine" id="githubIcon"></a>
       <a href="https://www.instagram.com/streamingstrawberry" id="instaIcon"></a>
-    </div>
-  </div>
-
-    <footer></footer>
-    <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-50px";
-        }
-      }
-    </script>
+  </footer>
   </body>
 </html>
