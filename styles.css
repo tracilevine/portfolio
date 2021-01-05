@@ -1,293 +1,65 @@
-body {
-  background-color: #d25b73;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  font-family: "Spartan", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400&family=Handlee&family=Just+Another+Hand&display=swap'); 
 
-#navbar {
-  background-color: transparent;
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
+body{
+    width: 100%; 
+    height: 80%;
+    font-family: Catamaran;
+    font-size: 16px;
+    background: #d25b73;
+    
 }
+/* Header */
+.div1 { 
+    background-color:#d25b73;
+    background-size: cover;
+    text-align:center;
+    margin-top:auto;
+    height: 100%;
+    font-family: Handlee,cursive;
+    animation: flyin 1.2s ease forwards;
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(4px);
+ }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: whitesmoke;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#navbar a:hover {
-  background: none;
-  color: #f2a900;
-}
-#logo {
-  height: 30vh;
-}
-
-#introSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1000px;
-  margin-bottom: auto;
-  animation: flyin 1.2s ease forwards;
-  opacity: 0;
-  transform: scale(2);
-  filter: blur(4px);
-}
-@keyframes flyin {
-  to {
-    filter: blur(0);
-    transform: scale(1);
-    opacity: 1;
+ @keyframes flyin {
+    to {
+      filter: blur(0);
+      transform: scale(1);
+      opacity: 1;
+    }
   }
+.div1 img{
+    height:400px;
+    width: 400px;
 }
-#name {
-  display: flex;
-  justify-content: center;
+.div1 h1{
+    font-size: 6rem;
+    font-weight: 700;
+    color: #d25b73;
+    background-color: #f2a900;
+    text-shadow: 0px 1px 1px #4d4d4d; 
+
+
 }
-#firstName {
-  color: #f2a900;
-  margin-right: 7px;
-  font-weight: 400;
-  font-size: 4rem;
-}
-#lastName {
-  color: whitesmoke;
-  margin-right: 7px;
-  font-weight: 700;
-  font-size: 4rem;
-}
-#jobTitle {
+.div1 h2{
   color: whitesmoke;
   font-weight: 400;
   font-size: 3rem;
-  margin-top: 1px;
+  -webkit-animation: colorRotate 6s linear 0s infinite;
 }
-
-#traciPhoto {
-  height: 40vh;
-  border-radius: 50%;
-  border: 1px ridge whitesmoke;
-}
-
-#aboutSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#aboutHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: whitesmoke;
-  font-size: 1rem;
-}
-#aboutMe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: whitesmoke;
-}
-
-#projects {
-  color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.projectType {
-  display: flex;
-  justify-content: space-around;
-}
-.web {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-#dev {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid blue;
-}
-
-#card {
-  height: 10%;
-  width: 10%;
-}
-#card img {
-  height: 20vh;
-  width: 15vw;
-  border-radius: 5%;
-}
-h1 {
-  font-size: 2.7rem;
-  color: whitesmoke;
-}
-h4 {
-  font-size: 1.5rem;
-}
-#resumeIcon{
-  height: 30vh;
-}
-#resumeSection{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-#resumeLink{
-  display: flex; 
-  align-items: center;
-  flex-direction:column;
-  color: whitesmoke;
-}
-a{
-  text-decoration: none;
-}
-#projectSection {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1080px;
-}
-.projectType{
-  display:flex;
-  flex-direction: column;
-}
-
-.projectTiles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
-.container {
-  position: relative;
-  width: 250px;
-  margin: 50px;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 250px;
-  height: 250px;
-  border-radius: 15px;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-.overlay {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-#projectSite {
-  content: url("https://api.iconify.design/gridicons:site.svg?color=whitesmoke&height=66");
-  vertical-align: -0.55em;
-}
-
-#projectGithub {
-  content: url("https://api.iconify.design/jam:github-square.svg?color=whitesmoke&height=52");
-  vertical-align: -0.1em;
-}
-
-#linkedinIcon {
-  content: url("https://api.iconify.design/jam:linkedin-square.svg?color=whitesmoke&height=50");
-  vertical-align: -0.125em;
-}
-
-#emailIcon {
-  content: url("https://api.iconify.design/mdi:email-box.svg?color=whitesmoke&height=55");
-  vertical-align: -0.125em;
-}
-
-#githubIcon {
-  content: url("https://api.iconify.design/jam:github-square.svg?color=whitesmoke&height=50");
-  vertical-align: -0.125em;
-}
-#instaIcon {
-   content: url('https://api.iconify.design/ant-design:instagram-outlined.svg?color=whitesmoke&height=50');
-    vertical-align: -0.125em;
-}
-
-#contact{
-    display:flex; 
-    justify-content: center;
-    margin-top: 10%;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@-webkit-keyframes colorRotate {
+    0% {
+      color: whitesmoke;
+    }
+    50%{
+      color:hotpink
+    }
+    100%{
+      color:#f2a900;
+    }
   }
-  #container{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-  }
-  #name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #aboutSection{
-    display:flex; 
-    flex-direction: column;
-    align-items: center;
-  }
-  #projectSection{
-      display:flex;
-      flex-direction: column; 
-      align-items:center;
-      margin-top: 600px;
-     
-  }
-  .projectTiles{
-    display:flex;
-    flex-direction: column;
-  }
-  #resumeSection{
-    margin-top:600px;
-  }
-  #download{
-    width: 20vw;
-  }
- 
 
-}
+  h1{ 
+    text-align:center;
+  }
