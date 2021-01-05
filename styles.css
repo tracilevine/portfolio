@@ -10,6 +10,13 @@ body{
     background: #d25b73;
     
 }
+.pink{
+  font-weight:800;
+  color: #d25b73;
+}
+.white{
+  color:whitesmoke
+}
 
 /* Header */
 .div1 { 
@@ -43,7 +50,6 @@ body{
     background-color: #f2a900;
     text-shadow: 0px 1px 1px #4d4d4d; 
 
-
 }
 .div1 h2{
   color: whitesmoke;
@@ -63,23 +69,34 @@ body{
     }
   }
 /* About Section */
-  
+#aboutSection{
+  background:black;
+  margin:auto;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.left{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
  .module{
     border-radius: 50%;
-    height:20vh;
+    height:40vh;
     padding: 2em;
+    margin:auto;
   } 
 .module-border-wrap{
   display: flex;
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-	width: 200px;
-	height: 200px;
-  margin: auto;
-  background-image: url(/utils/glitter.png)
-	/* background-color: #21D4FD;
-	background-image: linear-gradient(19deg, #21D4FD 0%, hotpink 100%); */
+	width: 50vh;
+	height: 30vw;
+  margin-top: 20px;
+  background-image: url(/utils/glitter.png);
 	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 	box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
 	animation: morphing 10s infinite;
@@ -102,48 +119,20 @@ body{
 			border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;		
 		}
 	}
-
-
   
-  #aboutSection {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-
-  }
- 
-
   #aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: whitesmoke;
     font-size: 1.5rem;
     text-align:left;
-    margin-left:20px;
-    margin-right: 20px;
-    
+    width:50%;
   }
-  #description p{
-    animation: p 5s ease-out;
-  }
-   /* Move it (define the animation) */
-   @keyframes  p {
-    0%   { 
-    transform: translateX(200%); 		
-    }
-    50% { 
-    transform: translateX(0%); 
-    }
-   }
-
+  
  
   .glitter-script{
     font-family: 'handlee', script;
     font-weight:800;
-    font-size: 2em;
+    font-size: 4em;
+    text-align:center;
     padding: 0.6em 0.2em;
     background-image: url(/utils/glitter.png);
     background-repeat: no-repeat;
@@ -152,8 +141,8 @@ body{
     -webkit-text-fill-color: transparent;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-    text-shadow:0px 2px 2px rgba(0, 0, 0, 0.4);
   }
+
   #rainbow{
     user-select: none;
     color: white;
@@ -173,7 +162,7 @@ body{
     }
   }
   
-  
+  /* Projects Section */
   #projects {
     color: whitesmoke;
     display: flex;
@@ -266,6 +255,9 @@ body{
     transition: 0.5s ease;
     backface-visibility: hidden;
   }
+  .video{
+    background:black;
+  }
   
   .overlay {
     transition: 0.5s ease;
@@ -300,7 +292,7 @@ body{
     content: url("https://api.iconify.design/jam:linkedin-square.svg?color=whitesmoke&height=50");
     vertical-align: -0.125em;
   }
-  
+
   #emailIcon {
     content: url("https://api.iconify.design/mdi:email-box.svg?color=whitesmoke&height=55");
     vertical-align: -0.125em;
@@ -314,11 +306,16 @@ body{
      content: url('https://api.iconify.design/ant-design:instagram-outlined.svg?color=whitesmoke&height=50');
       vertical-align: -0.125em;
   }
-  
+  #learnMore{
+    display: flex;
+    justify-content: center;
+  }
   #contact{
       display:flex; 
+      flex-direction:column;
       justify-content: center;
-      margin-top: 10%;
+      width:50%;
+      border: 3px solid whitesmoke;
   }
   
   @media only screen and (max-width: 600px) {
@@ -363,173 +360,3 @@ body{
   
   }
   
-
-
-/* Carousel */
-     /* @keyframes tonext {
-        75% {
-          left: 0;
-        }
-        95% {
-          left: 100%;
-        }
-        98% {
-          left: 100%;
-        }
-        99% {
-          left: 0;
-        }
-      }
-      
-      @keyframes tostart {
-        75% {
-          left: 0;
-        }
-        95% {
-          left: -300%;
-        }
-        98% {
-          left: -300%;
-        }
-        99% {
-          left: 0;
-        }
-      }
-      
-      @keyframes snap {
-        96% {
-          scroll-snap-align: center;
-        }
-        97% {
-          scroll-snap-align: none;
-        }
-        99% {
-          scroll-snap-align: none;
-        }
-        100% {
-          scroll-snap-align: center;
-        }
-      }
-      
-    ol, li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      
-      .carousel {
-        position: relative;
-        padding-top: 75%;
-        filter: drop-shadow(0 0 10px #0003);
-        perspective: 100px;
-      }
-      
-      .carousel__viewport {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        display: flex;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
-      }
-      
-      .carousel__slide {
-        position: relative;
-        flex: 0 0 100%;
-        width: 100%;
-        background-color: #d25b73;
-      }
-      
-      .carousel__slide:nth-child(even) {
-        background-color: #f2a900;
-      }
-      
-      .carousel__slide:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%,-40%,70px);
-        color: #fff;
-        font-size: 2em;
-      }
-      
-      /* .carousel__snapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        scroll-snap-align: center;
-      } */
-      
-      /* @media (hover: hover) {
-        .carousel__snapper {
-          animation-name: tonext, snap;
-          animation-timing-function: ease;
-          animation-duration: 4s;
-          animation-iteration-count: infinite;
-        }
-      
-        .carousel__slide:last-child .carousel__snapper {
-          animation-name: tostart, snap;
-        }
-      }
-      
-      @media (prefers-reduced-motion: reduce) {
-        .carousel__snapper {
-          animation-name: none;
-        }
-      }
-      
-      .carousel:hover .carousel__snapper,
-      .carousel:focus-within .carousel__snapper {
-        animation-name: none;
-      }
-       
-      .carousel::before,
-      .carousel::after,
-      .carousel__prev,
-      .carousel__next {
-        position: absolute;
-        top: 0;
-        margin-top: 37.5%;
-        width: 4rem;
-        height: 4rem;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        font-size: 0;
-        outline: 0;
-      }
-      
-      .carousel::before,
-      .carousel__prev {
-        left: -1rem;
-      }
-      
-      .carousel::after,
-      .carousel__next {
-        right: -1rem;
-      }
-      
-      .carousel::before,
-      .carousel::after {
-        content: '';
-        z-index: 1;
-        background-color: #333;
-        background-size: 1.5rem 1.5rem;
-        background-repeat: no-repeat;
-        background-position: center center;
-        color: #fff;
-        font-size: 2.5rem;
-        line-height: 4rem;
-        text-align: center;
-        pointer-events: none;
-      } */
-        
-  
-
-        
