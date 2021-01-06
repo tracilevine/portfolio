@@ -5,14 +5,26 @@ body {
   height: 100%;
   font-family: Catamaran;
   font-size: 16px;
-  background: black;
+  background: #d25b73;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 .pink {
   font-weight: 800;
-  color: #d25b73;
+  color: #f2a900;
 }
 .white {
   color: whitesmoke;
+}
+button{
+  background-color: #d25b73;
+  color: whitesmoke;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 5vh;
+  width: 5vw;
+  border: none;
 }
 
 /* Header */
@@ -66,11 +78,12 @@ body {
 }
 /* About Section */
 #aboutSection {
-  background: black;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: whitesmoke;
+  padding: 10px 10px 10px 10px;
 }
 .left {
   display: flex;
@@ -117,8 +130,8 @@ body {
 }
 
 #aboutMe {
-  color: whitesmoke;
-  font-size: 1.5rem;
+  color: #d25b73;
+  font-size: 1 rem;
   text-align: left;
   width: 50%;
 }
@@ -175,7 +188,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 1080px;
+  margin: auto;
 }
 .projectType {
   display: flex;
@@ -185,21 +198,16 @@ body {
 .projectTiles {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-
-.container {
+.container{
   position: relative;
-  width: 250px;
-  margin: 50px;
 }
-
 .image {
   opacity: 1;
   display: block;
   width: 250px;
   height: 250px;
-  border-radius: 15px;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -225,6 +233,8 @@ body {
 .container:hover .overlay {
   opacity: 1;
 }
+
+/* Icons */
 
 #projectSite {
   content: url("https://api.iconify.design/gridicons:site.svg?color=whitesmoke&height=66");
@@ -254,24 +264,38 @@ body {
   content: url("https://api.iconify.design/ant-design:instagram-outlined.svg?color=whitesmoke&height=50");
   vertical-align: -0.125em;
 }
-#learnMore{   
-  display:flex;
-  justify-content: space-evenly;
-  align-items:center;
-  color: whitesmoke;
-}
 #resumeIcon{
   content: url('https://api.iconify.design/fluent:document-20-regular.svg?color=whitesmoke&height=50');
   vertical-align: -0.125em;
 }
 
+/* Contact me section */
+#learnMore{   
+  width:100%;
+  background-image:url(/utils/Banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align:center;
+}
+#text-wrapper{
+  background:grey;
+  width: 50%;
+}
+#table-wrapper{
+  width:500px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+  color: whitesmoke;
+  padding: 10px 10px 10px 10px;
+  border: 3px whitesmoke solid;
+  margin: auto;
+}
+
 a{
   text-decoration:none;
   color:whitesmoke;
-}
-
-form{
-  border: 1px whitesmoke solid;
 }
 @media only screen and (max-width: 600px) {
   body {
@@ -311,3 +335,54 @@ form{
     width: 20vw;
   }
 }
+
+.element{
+  padding: 10px;
+  background: crimson;
+  color: white;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.element .question{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.question h3{
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 17px;
+  text-align: center;
+}
+.question button{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.question i{
+  color: white;
+  font-size: 20px;
+}
+.element .answer{
+  padding: 10px 20px;
+  animation: animate .7s;
+}
+p{
+  font-family: sans-serif;
+}
+.hideText{
+  display: none;
+}
+@keyframes animate{
+  from{
+      opacity: 0;
+      transform: scale(0.6);
+  }
+  to{
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
