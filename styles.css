@@ -132,6 +132,9 @@ font-size: 3rem;
   width: 50%;
 }
 
+#aboutMe h3{
+  font-size: 2rem;
+}
 .glitter-script {
   font-family: "handlee", script;
   font-weight: 800;
