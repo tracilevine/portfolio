@@ -13,9 +13,9 @@
       <h1>T r a c i L e v i n e</h1>
       <h2>Founder | Web Developer | Product Manager</h2>
     </header>
-    <button type="button" class="collapsible"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
 
-    <section id="aboutSection" class="content" >
+    <button type="button" class="collapsible"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
+    <section id="aboutSection" class="content active" >
         <div class="left">
             <div class="module-border-wrap">
               <img
@@ -54,9 +54,9 @@
             </p>
         </div>
     </section>
-    <button type="button" class="collapsible btn-white"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
+    <button type="button" class="collapsible" ><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
 
-    <section id="projectSection" class="content">
+    <section id="projectSection" class="content active">
           <h1 class="glitter-script">Projects</h1>
           <div class="projectTiles">
             <div class="container">
@@ -160,7 +160,7 @@
         </div>
     </section>'
     <button type="button" class="collapsible"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
-    <section id="learnMore" class="content">
+    <section id="learnMore" class="content active">
           <div id="text-wrapper">
             <h1 class="glitter-script">Connect With Me!</h1>
           </div>
@@ -196,22 +196,18 @@
             </table>
           </div>
     </section>
-    <footer></footer>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
+    <footer>
+      <div id="traci">
+        <p>Traci Levine ©️ 2021. All Rights Reserved. <br>
+            <a href="mailto:streamingstrawberry@gmail.com" target="_blank"><strong>streamingstrawberry@gmail.com</strong></a></p>
+          </div>
+          <div id="backtotop">
+            <button type="button" id="Top" onclick="topFunction()">Back to Top <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></button>
+          </div>
+
+    </footer>
+    <script src="index.js">
       
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
       </script>
       <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>

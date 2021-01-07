@@ -182,6 +182,7 @@ body {
   width: 100%;
   margin: auto;
 }
+
 .projectType {
   display: flex;
   flex-direction: column;
@@ -289,6 +290,23 @@ a{
   text-decoration:none;
   color:whitesmoke;
 }
+
+footer{
+  height: 10%;
+  width:100%;
+  color:whitesmoke;
+  font-weight:300;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+#Top{
+  background:transparent !important;
+  border: none;
+  margin-left:100px;
+
+}
+
 @media only screen and (max-width: 600px) {
   body {
     display: flex;
@@ -339,22 +357,25 @@ a{
   border: none;
   outline: none;
   font-size: 15px;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius:50%;
+  border-radius: 0 0 90px 90px;
+  border-color:transparent;
   margin-bottom:-20px;
   z-index: 1;
   text-align:center;
 }
+
 .iconify { width: 24px; 
   height: 24px;
   color:#f2a900; }
-
+.btn-white.hidden{
+  display: none;
+}
 .btn-white{
   background-color:whitesmoke !important;
   margin-top:-40px;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #d25b73;
 }
 
