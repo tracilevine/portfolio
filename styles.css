@@ -22,54 +22,55 @@ body {
 
 /* Header */
 .div1 { 
-    background-color:#d25b73;
-    background-size: cover;
-    text-align:center;
-    margin-top:auto;
-    height: 100%;
-    font-family: Handlee,cursive;
-    animation: flyin 1.2s ease forwards;
-    opacity: 0;
-    transform: scale(2);
-    filter: blur(4px);
- }
+  background-color:#d25b73;
+  background-size: cover;
+  text-align:center;
+  margin-top:auto;
+  height: 100%;
+  width:100%;
+  font-family: Handlee,cursive;
+  animation: flyin 1.2s ease forwards;
+  opacity: 0;
+  transform: scale(2);
+  filter: blur(4px);
+}
 
- @keyframes flyin {
-    to {
-      filter: blur(0);
-      transform: scale(1);
-      opacity: 1;
-    }
+@keyframes flyin {
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
   }
+}
 .div1 img{
-    height:400px;
-    width: 400px;
+  height:400px;
+  width: 400px;
 }
 .div1 h1{
-    font-size: 6rem;
-    font-weight: 700;
-    color: #d25b73;
-    background-color: #f2a900;
-    text-shadow: 0px 1px 1px #4d4d4d; 
+  font-size: 6rem;
+  font-weight: 700;
+  color: #d25b73;
+  background-color: #f2a900;
+  text-shadow: 0px 1px 1px #4d4d4d; 
 
 
 }
 .div1 h2{
-  color: whitesmoke;
-  font-weight: 400;
-  font-size: 3rem;
-  -webkit-animation: colorRotate 6s linear 0s infinite;
+color: whitesmoke;
+font-weight: 400;
+font-size: 3rem;
+-webkit-animation: colorRotate 6s linear 0s infinite;
 }
 @-webkit-keyframes colorRotate {
-  0% {
-    color: whitesmoke;
-  }
-  50% {
-    color: hotpink;
-  }
-  100% {
-    color: #f2a900;
-  }
+0% {
+  color: whitesmoke;
+}
+50% {
+  color: hotpink;
+}
+100% {
+  color: #f2a900;
+}
 }
 /* About Section */
 #aboutSection {
