@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400&family=Handlee&family=Just+Another+Hand&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400&family=Handlee&family=Just+Another+Hand&display=swap");
 
-body{
-    width: 100%; 
-    height: 80%;
-    font-family: Catamaran;
-    font-size: 16px;
-    background: #d25b73;
-    
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Catamaran;
+  font-size: 16px;
+  background: #d25b73;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.pink {
+  font-weight: 800;
+  color: #f2a900;
+}
+.white {
+  color: whitesmoke;
 }
 /* Header */
 .div1 { 
