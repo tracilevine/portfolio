@@ -1,21 +1,14 @@
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-const elements = document.querySelectorAll('.element');
-
-elements.forEach(element =>{
-    let btn = element.querySelector('.question button');
-    let icon = element.querySelector('.question button i');
-    var answer = element.lastElementChild;
-    var answers = document.querySelectorAll('.element .answer');
-    btn.addEventListener('click', ()=>{
-        answers.forEach(ans =>{
-            let ansIcon = ans.parentElement.querySelector('button i');
-            if(answer !== ans){
-                ans.classList.add('hideText');
-                ansIcon.className = 'fas fa-plus-circle';
-            }
-        });
-        answer.classList.toggle('hideText');
-        icon.className === 'fas fa-plus-circle' ? icon.className = 'fas fa-minus-circle' 
-        : icon.className ='fas fa-plus-circle';
-    });
-});
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

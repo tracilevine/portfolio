@@ -17,19 +17,11 @@ body {
 .white {
   color: whitesmoke;
 }
-button{
-  background-color: #d25b73;
-  color: whitesmoke;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  height: 5vh;
-  width: 5vw;
-  border: none;
-}
 
 /* Header */
 .div1 {
   background-color: #d25b73;
+  width:100%;
   background-size: cover;
   text-align: center;
   margin-top: auto;
@@ -328,61 +320,41 @@ a{
     display: flex;
     flex-direction: column;
   }
-  #resumeSection {
-    margin-top: 600px;
-  }
-  #download {
-    width: 20vw;
+  #learnmore{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.element{
-  padding: 10px;
-  background: crimson;
-  color: white;
-  margin: 10px 0;
-  border-radius: 5px;
-}
-.element .question{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-.question h3{
-  font-family: sans-serif;
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 17px;
-  text-align: center;
-}
-.question button{
+/* Toggle */
+
+.collapsible {
+  background-color:#d25b73 !important;
+  color:whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+  height:10vh;
+  width: 10%;
   border: none;
   outline: none;
-  background: none;
-  cursor: pointer;
+  font-size: 15px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius:50%;
+  margin-bottom:-20px;
+  z-index: 1;
+  text-align:center;
 }
-.question i{
-  color: white;
-  font-size: 20px;
+.iconify { width: 24px; 
+  height: 24px;
+  color:#f2a900; }
+
+.btn-white{
+  background-color:whitesmoke !important;
+  margin-top:-40px;
 }
-.element .answer{
-  padding: 10px 20px;
-  animation: animate .7s;
-}
-p{
-  font-family: sans-serif;
-}
-.hideText{
-  display: none;
-}
-@keyframes animate{
-  from{
-      opacity: 0;
-      transform: scale(0.6);
-  }
-  to{
-      opacity: 1;
-      transform: scale(1);
-  }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
 }
 

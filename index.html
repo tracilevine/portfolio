@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Traci Levine</title>
     <link rel="stylesheet" href="styles.css" />
+    
   </head>
   <body>
     <header class="div1">
@@ -12,156 +13,206 @@
       <h1>T r a c i L e v i n e</h1>
       <h2>Founder | Web Developer | Product Manager</h2>
     </header>
-    <button><i class="fas fa-plus-circle"></i></button>
+    <button type="button" class="collapsible"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
 
-    <div class="element">
-      <div class="question">
-          <h3>About Me</h3>
-          <button><i class="fas fa-plus-circle"></i></button>
-      </div>
-      <div class="answer hideText">
-          
-      </div>
-  </div>
-    
-    <button><i class="fas fa-plus-circle"></i></button>
-    <div id="projectSection" >
-      <h1 class="glitter-script">Projects</h1>
-      <div class="projectTiles ">
-        
-        <div class="container">
-          <video
-            src="/utils/tetris.mov"
-            alt="Tetris"
-            class="video image"
-          ></video>
-          <div class="overlay">
-            <a
-              id="projectGithub"
-              href="https://github.com/tracilevine/React-Tetris"
-              target="_blank"
-            ></a>
-            <a
-              id="projectSite"
-              href="www.react-tetris-traci.netlify.app"
-              target="_blank"
-            ></a>
-          </div>
+    <section id="aboutSection" class="content" >
+        <div class="left">
+            <div class="module-border-wrap">
+              <img
+                id="traciPhoto "
+                class="module"
+                src="/utils/Traci.png"
+                alt="traci"
+              />
+            </div>
         </div>
-        <div class="container">
+        <div id="aboutMe">
+            <p>
+              I am a <span class="pink"><strong>web developer</strong> </span>.
+              <br />
+              I am a <span class="pink"> <strong>product manager</strong></span
+              >.
+              <br />
+              I am a <span id="rainbow"> <strong>dreamer</strong></span
+              >.
+              <br />
+              I have big ideas and aspirations to change the tech world for
+              better.
+              <br />
+              I have a degree in <span class="pink">Social Work</span> with a
+              focus in community organizing. I strive to bring people together
+              and help them find connected path.
+              <br />
+              I am a <span class="pink">Wyncode Acadamy</span> graduate and I
+              continue to work with my classmates on projects to increase my
+              knowledge and skills. I am passionate about creating communities
+              and comradary.
+              <br />
+              I am currently studying
+              <span class="pink">Product Management </span>with the goal to
+              bring my passion for coding and passion for community to life.
+            </p>
+        </div>
+    </section>
+    <button type="button" class="collapsible btn-white"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
 
-          <img src="/utils/gitbrewd.png" alt="Git Brewd" class="image gitbrewd" />
-          <div class="overlay">
-            <a
-              id="projectSite"
-              href="https://gitbrewd.herokuapp.com/"
-              target="_blank"
-            ></a>
-            <a
-              id="projectGithub"
-              href="https://github.com/wyncode/c39_midterm_jp_traci_jose_ulises"
-              target="_blank"
-            ></a>
+    <section id="projectSection" class="content">
+          <h1 class="glitter-script">Projects</h1>
+          <div class="projectTiles">
+            <div class="container">
+              <video
+                src="/utils/tetris.mov"
+                alt="Tetris"
+                class="video image"
+              ></video>
+              <div class="overlay">
+                <a
+                  id="projectGithub"
+                  href="https://github.com/tracilevine/React-Tetris"
+                  target="_blank"
+                ></a>
+                <a
+                  id="projectSite"
+                  href="www.react-tetris-traci.netlify.app"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="/utils/gitbrewd.png"
+                alt="Git Brewd"
+                class="image gitbrewd"
+              />
+              <div class="overlay">
+                <a
+                  id="projectSite"
+                  href="https://gitbrewd.herokuapp.com/"
+                  target="_blank"
+                ></a>
+                <a
+                  id="projectGithub"
+                  href="https://github.com/wyncode/c39_midterm_jp_traci_jose_ulises"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="container mySlides">
+              <img
+                src="/utils/BikeShop.jpeg"
+                alt="BikeShop"
+                class="image bikeshop"
+              />
+              <div class="overlay">
+                <a
+                  id="projectSite"
+                  href="https://bikeshop305.herokuapp.com/"
+                  target="_blank"
+                ></a>
+                <a
+                  id="projectGithub"
+                  href="https://github.com/wyncode/c39_bike_shop"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="projectTiles">
+            <div class="container">
+              <img
+                src="/utils/streamstrawberry.png"
+                alt="Streaming Strawberry"
+                class="image"
+              />
+              <div class="overlay">
+                <a
+                  id="projectSite"
+                  href="https://streamingstrawberr2.wixsite.com/streamingstrawberry"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="/utils/CoronaBoook.png"
+                alt="Corona Book Swap"
+                class="image"
+              />
+              <div class="overlay">
+                <a
+                  id="projectSite"
+                  href="https://streamingstrawberr2.wixsite.com/coronabookswap"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="/utils/MiamiTLC.png" alt="Miami TLC" class="image" />
+              <div class="overlay">
+                <a
+                  id="projectSite"
+                  href="https://streamingstrawberr2.wixsite.com/mtlc"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container mySlides">
-          <img src="/utils/BikeShop.jpeg" alt="BikeShop" class="image bikeshop" />
-          <div class="overlay">
-            <a
-              id="projectSite"
-              href="https://bikeshop305.herokuapp.com/"
-              target="_blank"
-            ></a>
-            <a
-              id="projectGithub"
-              href="https://github.com/wyncode/c39_bike_shop"
-              target="_blank"
-            ></a>
+    </section>'
+    <button type="button" class="collapsible"><iconify-icon data-icon="dashicons:arrow-down-alt2"></iconify-icon></button>
+    <section id="learnMore" class="content">
+          <div id="text-wrapper">
+            <h1 class="glitter-script">Connect With Me!</h1>
           </div>
-        </div>
-      </div>
-      <div class="projectTiles">
-        <div class="container">
-          <img
-            src="/utils/streamstrawberry.png"
-            alt="Streaming Strawberry"
-            class="image"
-          />
-          <div class="overlay">
-            <a
-              id="projectSite"
-              href="https://streamingstrawberr2.wixsite.com/streamingstrawberry"
-              target="_blank"
-            ></a>
+          <div id="table-wrapper">
+            <table>
+              <tr>
+                <td id="emailIcon"></td>
+                <td>
+                  <a href="mailto:streamingstrawberry@gmail.com" target="_blank"
+                    >Email Me!</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td id="linkedinIcon"></td>
+                <td>Connect on LinkedIn!</td>
+              </tr>
+              <tr>
+                <td id="instaIcon"></td>
+                <td>Follow me on Instagram!</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td id="githubIcon"></td>
+                <td>Explore my github!</td>
+              </tr>
+              <tr>
+                <td id="resumeIcon"></td>
+                <td>Download my resume!</td>
+              </tr>
+            </table>
           </div>
-        </div>
-        <div class="container">
-          <img
-            src="/utils/CoronaBoook.png"
-            alt="Corona Book Swap"
-            class="image"
-          />
-          <div class="overlay">
-            <a
-              id="projectSite"
-              href="https://streamingstrawberr2.wixsite.com/coronabookswap"
-              target="_blank"
-            ></a>
-          </div>
-        </div>
-        <div class="container">
-          <img src="/utils/MiamiTLC.png" alt="Miami TLC" class="image" />
-          <div class="overlay">
-            <a
-              id="projectSite"
-              href="https://streamingstrawberr2.wixsite.com/mtlc"
-              target="_blank"
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button><i class="fas fa-plus-circle"></i></button>
-    <div id="learnMore">
-      <div id="text-wrapper">
-      <h1 class="glitter-script">Connect With Me!</h1>
-      </div>
-      <div id="table-wrapper">
-      <table>
-        
-        <tr>
-          
-          <td id="emailIcon"></td> 
-          <td> <a href="mailto:streamingstrawberry@gmail.com" target="_blank">Email Me!</a></td>
-         
-        </tr>
+    </section>
+    <footer></footer>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
       
-        <tr>
-          <td id="linkedinIcon"></td>
-          <td>Connect on LinkedIn!</td>
-        </tr>
-        <tr>
-          <td id="instaIcon"></td>
-          <td>Follow me on Instagram!</td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td id="githubIcon"></td>
-          <td>Explore my github!</td>
-        </tr>
-        <tr>
-          <td id="resumeIcon"></td>
-          <td>Download my resume!</td>
-        </tr>
-      </table>
-    </div>
-    </div>
-
-    <footer>
-
-    </footer>
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>
-  <script type="text/javascript" src="index.js"></script>
-  <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
 </html>
