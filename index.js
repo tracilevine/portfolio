@@ -1,17 +1,19 @@
-var coll = document.getElementsByClassName("collapsible");
-      var i;
+let coll = document.getElementsByClassName("collapsible");
+      let i;
       
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
           this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
+          let content = this.nextElementSibling;
+          if (content.style.display === "flex") {
             content.style.display = "none";
           } else {
-            content.style.display = "block";
-          }
+            content.style.display = "flex";
+          } 
         });
       }
+
+
       // Back to top button 
       mybutton = document.getElementById("Top");
       function topFunction() {
